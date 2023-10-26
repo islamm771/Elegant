@@ -16,13 +16,6 @@ window.addEventListener('scroll' , function(){
         });
     })
 })
-
-
-
-
-
-
-
 filters.forEach((li) =>{
     li.addEventListener("click" , removeActive);
     li.addEventListener("click", manageImage);
