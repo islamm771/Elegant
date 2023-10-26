@@ -154,6 +154,42 @@ header .row div > div{
     height: 3px;
     background-color: var(--underline-color);
 }
+.best-selling .all-imgs .product-details h6{
+    color: var(--heading-color);
+    margin-bottom: 5px;
+}
+.best-selling .all-imgs .product-details span svg{
+    color: gold;
+}
+.best-selling .all-imgs .fav{
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+.best-selling .all-imgs .fav input{
+    position: relative;
+    z-index: 99;
+    opacity: 0;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.best-selling .all-imgs .fav svg{
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+}
+.best-selling .all-imgs .fav svg:first-of-type{
+    color: white;
+}
+.best-selling .all-imgs .fav svg:last-of-type{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.best-selling .all-imgs .fav input:checked ~svg:last-of-type{
+    opacity: 1;
+    color: red;
+}
 
 /* end Best Selling */
 
