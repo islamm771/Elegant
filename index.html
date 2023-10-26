@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,7 +56,7 @@
     <!-- end nav -->
 
     <!-- start header -->
-    <header id="home">
+    <section class="home" id="home">
         <div class="container">
             <div class="row align-items-lg-center">
                 <div class="col-md-6 mb-4 mb-md-0">
@@ -71,11 +73,11 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <!-- end header -->
 
     <!-- start New Collection -->
-    <div class="new-collection" id="collection">
+    <section class="new-collection" id="collection">
         <div class="container">
             <h1 class="special-heading text-center">New Collection</h1>
             <p class="text-center">Just let us help you to complete your elegance.</p>
@@ -104,11 +106,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- end New Collection -->
 
     <!-- start Best Selling -->
-    <div class="best-selling" id="selling">
+    <section class="best-selling" id="selling">
         <div class="container">
             <h1 class="special-heading text-center">Best Sellings</h1>
             <div class="filter">
@@ -240,11 +242,11 @@
                 <button class="special-button">Show more</button>
             </div>
         </div>
-    </div>
+    </section>
     <!-- end Best Selling -->
 
     <!-- start deal -->
-    <div class="deal" id="deal">
+    <section class="deal" id="deal">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-3 mb-md-0">
@@ -264,33 +266,58 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- end deal -->
 
     <!-- start Feedback -->
-    <div class="feedback" id="feedback">
+    <section class="feedback" id="feedback">
         <div class="container">
             <h1 class="special-heading text-center">Feedback Corner</h1>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div>
+            <div class="d-none d-lg-block">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="items item1">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <h3>kenzy Mohamed</h3>
+                            <p>I am amazed by the material of the clothes. I expect that I will not buy from anywhere else
+                                except them.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="items item2">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <h3>Lili Ahmed</h3>
+                            <p>The discounts are very great. I bought from them and received my clothes, exactly as they
+                                were in the pictures, in less
+                                than a week.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="items item3">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <h3>Sarah Hany</h3>
+                            <p>Everything here is great thank you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-container d-block d-lg-none mt-5">
+                <div class="slickSlider">
+                    <div class="items item1">
                         <i class="fa-solid fa-quote-left"></i>
                         <h3>kenzy Mohamed</h3>
                         <p>I am amazed by the material of the clothes. I expect that I will not buy from anywhere else
-                            except them.</p>
+                        except them.</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div>
+                    <div class="items item2">
                         <i class="fa-solid fa-quote-left"></i>
                         <h3>Lili Ahmed</h3>
                         <p>The discounts are very great. I bought from them and received my clothes, exactly as they
-                            were in the pictures, in less
-                            than a week.</p>
+                        were in the pictures, in less
+                        than a week.</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div>
+                    <div class="items item3">
                         <i class="fa-solid fa-quote-left"></i>
                         <h3>Sarah Hany</h3>
                         <p>Everything here is great thank you</p>
@@ -298,7 +325,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- end Feedback -->
 
     <!-- start Footer -->
@@ -355,6 +382,15 @@
     <script src="./js/all.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slickSlider').slick({
+                dots: true,
+            });
+        });
+    </script>
 </body>
 
 </html>
