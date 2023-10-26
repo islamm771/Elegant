@@ -315,6 +315,13 @@ footer .social-links li a:hover {
     header .row div>div {
             width: auto;
         }
+    .best-selling .all-imgs .product-details h6{
+        font-size: 18px;
+    }
+    .best-selling .all-imgs .fav svg , .best-selling .all-imgs .fav input{
+        width: 26px;
+        height: 26px;
+    }
     .deal .row div:last-child>div {
         width: auto;
     }
