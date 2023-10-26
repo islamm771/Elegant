@@ -1,5 +1,5 @@
 let filters = document.querySelectorAll(".filter li");
-let imgs = document.querySelectorAll(".all-imgs .row div");
+let imgs = document.querySelectorAll(".all-imgs .row .col-md-6");
 let links = document.querySelectorAll('nav ul li a');
 filters.forEach((li) =>{
     li.addEventListener("click" , removeActive);
