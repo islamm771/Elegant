@@ -1,11 +1,32 @@
 let filters = document.querySelectorAll(".filter li");
 let imgs = document.querySelectorAll(".all-imgs .row .col-md-6");
 let links = document.querySelectorAll('nav ul li a');
+const sections = document.querySelectorAll('section')
+
+window.addEventListener('scroll' , function(){
+    let current = ''
+    sections.forEach(section =>{
+        sectionTop = section.offsetTop
+        if(scrollY > sectionTop - 65 ){
+            current = section.getAttribute('id')
+        }
+        links.forEach((li) => {
+          li.classList.remove("active");
+          document.querySelector("nav ul li a[href*= " + current + "]").classList.add("active");
+        });
+    })
+})
+
+
+
+
+
+
+
 filters.forEach((li) =>{
     li.addEventListener("click" , removeActive);
     li.addEventListener("click", manageImage);
 })
-
 
 function removeActive(){
     filters.forEach((li) => {
@@ -23,8 +44,6 @@ function manageImage(){
         }
     })
 }
-
-
 
 links.forEach(a =>{
     a.onclick = function(){
