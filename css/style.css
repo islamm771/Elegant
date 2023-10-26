@@ -70,23 +70,23 @@ nav div button{
 
 
 /* start header */
-header{
+.home{
     background-color: var(--section-bg-color);
     padding: 3rem 0;
 }
-header .container .row div h1{
+.home .container .row div h1{
     color: var(--heading-color);
     font-size: 65px;
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: 700;
     margin-bottom: 20px;
 }
-header .container .row div p{
+.home .container .row div p{
     color: var(--p-color);
     font-size: 18px;
     margin-bottom: 20px;
 }
-header .row div > div{
+.home .row div > div{
     background-color: var(--img-header-bg-color);
     width: 400px;
     border-radius: 0% 0% 0% 25%;
@@ -190,7 +190,6 @@ header .row div > div{
     opacity: 1;
     color: red;
 }
-
 /* end Best Selling */
 
 /* start Deal */
@@ -230,20 +229,37 @@ header .row div > div{
 .feedback{
     padding: 3rem 0;
 }
-.feedback .row div div{
+.feedback .row .items{
     min-height: 200px;
     margin-top: 2rem;
     padding: 5px 10px;
     border: 1px solid #000;
 }
-.feedback .row div:nth-child(2) div{
+.feedback .item2{
     background-color: var(--section-bg-color);
 }
-.feedback .row div div svg{
+.feedback .items svg{
     font-size: 22px;
 }
-.feedback .row div div h3{
+.feedback .items h3{
     font-weight: 700;
+}
+.slider-container .slickSlider {
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    /* height: 200px; */
+}
+.slider-container .slickSlider .items{
+    min-height: 200px;
+    padding: 10px 13px;
+    border-radius: 8px;
+}
+.slider-container .slickSlider .slick-prev , .slick-next{
+    display: none !important;
+}
+.slick-dots li button:before{
+    font-size: 20px !important;
 }
 /* end feedback */
 
@@ -307,14 +323,14 @@ footer .social-links li a {
 footer .social-links li a:hover {
     color: #fff;
 }
-/* start footer */
+/* end footer */
 @media (min-width:320px) and (max-width:480px){
     header .container .row div h1 {
             font-size: 36.5px;
-        }
+    }
     header .row div>div {
             width: auto;
-        }
+    }
     .best-selling .all-imgs .product-details h6{
         font-size: 18px;
     }
