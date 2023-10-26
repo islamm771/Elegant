@@ -325,10 +325,10 @@ footer .social-links li a:hover {
 }
 /* end footer */
 @media (min-width:320px) and (max-width:480px){
-    header .container .row div h1 {
+    .home .container .row div h1 {
             font-size: 36.5px;
     }
-    header .row div>div {
+    .home .row div>div {
             width: auto;
     }
     .best-selling .all-imgs .product-details h6{
